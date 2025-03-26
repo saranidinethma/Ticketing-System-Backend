@@ -18,14 +18,15 @@ public class WebConfig implements WebMvcConfigurer {
      * @param registry the CORS registry to which mappings can be added.
      *
      * <p>This method configures the application to allow requests from
-     * "<a href="http://localhost:3000">...</a>" with the following HTTP methods:
+     * "<a href="https://ticketing-system-frontend-phi.vercel.app/">...</a>" with the following HTTP methods:
      * GET, POST, PUT, and DELETE. It allows all headers in the requests.</p>
      */
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("http://localhost:3000")
+                .allowedOrigins("https://ticketing-system-frontend-phi.vercel.app")  // Ensure there's no trailing slash
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
-                .allowedHeaders("*");
+                .allowedHeaders("*")
+                .allowCredentials(true);  // Allow credentials like cookies, authorization headers
     }
 }
