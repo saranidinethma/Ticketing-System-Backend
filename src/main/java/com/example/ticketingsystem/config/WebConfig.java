@@ -24,9 +24,9 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("https://ticketing-system-frontend-phi.vercel.app")  // Ensure there's no trailing slash
+                .allowedOrigins("https://ticketing-system-frontend-phi.vercel.app")
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowedHeaders("*")
-                .allowCredentials(true);  // Allow credentials like cookies, authorization headers
+                .allowCredentials(true);
     }
 }
