@@ -19,7 +19,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/**") // Allow CORS for API endpoints
-                .allowedOrigins("https://event-ticketing-realtime.vercel.app/, http://localhost:3000")
+                .allowedOrigins("https://ticketing-system-frontend-phi.vercel.app/, http://localhost:3000")
                 .allowCredentials(true); // Allow credentials (like cookies) to be sent
     }
 }
