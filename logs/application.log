@@ -1,0 +1,58 @@
+2025-07-16T10:16:06.901+05:30  INFO 36564 --- [TicketingPlatformBackend] [restartedMain] .e.T.TicketingPlatformBackendApplication : Starting TicketingPlatformBackendApplication using Java 21.0.5 with PID 36564 (/Users/saranidinethma/Desktop/Ticketing/RealTime-Event-Ticketing-Platform-Backend/target/classes started by saranidinethma in /Users/saranidinethma/Desktop/Ticketing/RealTime-Event-Ticketing-Platform-Backend)
+2025-07-16T10:16:06.902+05:30  INFO 36564 --- [TicketingPlatformBackend] [restartedMain] .e.T.TicketingPlatformBackendApplication : No active profile set, falling back to 1 default profile: "default"
+2025-07-16T10:16:06.921+05:30  INFO 36564 --- [TicketingPlatformBackend] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-16T10:16:06.921+05:30  INFO 36564 --- [TicketingPlatformBackend] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-16T10:16:07.736+05:30  INFO 36564 --- [TicketingPlatformBackend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-16T10:16:07.744+05:30  INFO 36564 --- [TicketingPlatformBackend] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-16T10:16:07.744+05:30  INFO 36564 --- [TicketingPlatformBackend] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-07-16T10:16:07.765+05:30  INFO 36564 --- [TicketingPlatformBackend] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-16T10:16:07.765+05:30  INFO 36564 --- [TicketingPlatformBackend] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 844 ms
+2025-07-16T10:16:08.215+05:30  WARN 36564 --- [TicketingPlatformBackend] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-07-16T10:16:08.219+05:30  INFO 36564 --- [TicketingPlatformBackend] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-07-16T10:16:08.244+05:30  WARN 36564 --- [TicketingPlatformBackend] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-07-16T10:16:08.254+05:30  INFO 36564 --- [TicketingPlatformBackend] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-07-16T10:16:08.262+05:30 ERROR 36564 --- [TicketingPlatformBackend] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-07-16T10:22:06.130+05:30  INFO 36980 --- [TicketingPlatformBackend] [restartedMain] .e.T.TicketingPlatformBackendApplication : Starting TicketingPlatformBackendApplication using Java 21.0.5 with PID 36980 (/Users/saranidinethma/Desktop/Ticketing/RealTime-Event-Ticketing-Platform-Backend/target/classes started by saranidinethma in /Users/saranidinethma/Desktop/Ticketing/RealTime-Event-Ticketing-Platform-Backend)
+2025-07-16T10:22:06.131+05:30  INFO 36980 --- [TicketingPlatformBackend] [restartedMain] .e.T.TicketingPlatformBackendApplication : No active profile set, falling back to 1 default profile: "default"
+2025-07-16T10:22:06.150+05:30  INFO 36980 --- [TicketingPlatformBackend] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-16T10:22:06.151+05:30  INFO 36980 --- [TicketingPlatformBackend] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-16T10:22:06.815+05:30  INFO 36980 --- [TicketingPlatformBackend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-16T10:22:06.825+05:30  INFO 36980 --- [TicketingPlatformBackend] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-16T10:22:06.825+05:30  INFO 36980 --- [TicketingPlatformBackend] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-07-16T10:22:06.841+05:30  INFO 36980 --- [TicketingPlatformBackend] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-16T10:22:06.841+05:30  INFO 36980 --- [TicketingPlatformBackend] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 690 ms
+2025-07-16T10:22:07.277+05:30  WARN 36980 --- [TicketingPlatformBackend] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-07-16T10:22:07.281+05:30  INFO 36980 --- [TicketingPlatformBackend] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-07-16T10:22:07.318+05:30  WARN 36980 --- [TicketingPlatformBackend] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-07-16T10:22:07.330+05:30  INFO 36980 --- [TicketingPlatformBackend] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-07-16T10:22:07.337+05:30 ERROR 36980 --- [TicketingPlatformBackend] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+

@@ -1,36 +1,75 @@
-# Real-Time Ticketing System
+Real-Time Event Ticketing Platform Backend
 
-## Introduction
-The Real-Time Ticketing System is a Spring Boot application designed to simulate a ticket sales process. It allows vendors to release tickets into a shared pool while customers attempt to purchase them concurrently. This system demonstrates the use of multi-threading, synchronization, and RESTful services in Java, providing a practical example of real-time operations in a ticketing scenario.
+Introduction
+Welcome to the Real-Time Event Ticketing Platform Backend! This application serves as a robust backend solution for managing ticket sales in real-time. It utilizes the Producer-Consumer pattern to handle concurrent ticket releases by vendors and purchases by customers while ensuring data integrity and synchronization. The system is built using Spring Boot and provides RESTful APIs for seamless interaction with frontend applications.
+Setup Instructions
+Prerequisites
+Before you begin, ensure you have the following installed on your machine:
 
-## Features
-- Multi-threaded ticket sales simulation with vendors and customers.
-- RESTful API for managing ticket operations.
-- CORS support for cross-origin requests.
-- Logging of operations for monitoring and debugging.
+    Java Development Kit (JDK): Version 11 or higher.
+    Maven: For building the application.
+    Node.js: Required if you're using a JavaScript-based frontend (e.g., React.js or Angular).
 
-## Setup Instructions
 
-### Prerequisites
-Before running the application, ensure you have the following installed on your machine:
+How to Build and Run the Application
 
-- **Java Development Kit (JDK)**: Version 11 or higher
-- **Maven**: For managing dependencies and building the project
-- **Node.js**: (Optional) If you plan to run a frontend application separately
+1. Clone the Repository:
+git clone https://github.com/Jehanfernando02/Real-Time-Event-Ticketing-System
 
-### How to Build and Run the Application
+cd Real-Time-Event-Ticketing-System
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/yourusername/RealTimeTicketingSystem.git
-   cd RealTimeTicketingSystem
-2.Build the Project
-Use Maven to build the project:
-bash
-mvn clean install
-3.Run the Application
-After building, you can run the application using:
-bash
-mvn spring-boot:run
-4.Accessing the Application
-The application will start on http://localhost:8080. You can use tools like Postman or curl to interact with the REST API.
+2. Build the Application:
+   Use Maven to build the project:
+
+   mvn clean install
+
+3. Run the Application:
+   After building, you can run the application using:
+
+   mvn spring-boot:run
+
+
+4. Access the API:
+   The backend will be running on http://localhost:8080/api. You can use tools like Postman or cURL to interact with the API.
+
+
+Usage Instructions
+
+1. Configuring and Starting the System
+
+    Configuration:
+    Before starting the system, you need to configure it. Send a POST request to /api/config with a JSON body containing your configuration settings:
+
+Example :
+{
+"totalTickets": 100,
+"ticketReleaseRate": 5,
+"customerRetrievalRate": 3,
+"maxTicketCapacity": 200
+}
+
+2. Start the System:
+After configuring, start the system by sending a POST request to /api/start. This will initialize ticket vendors and customers based on your configuration.
+
+3. Stopping and Resetting the System:
+
+    To stop the system, send a POST request to /api/stop.
+    To reset the system (clearing all current operations), send a POST request to /api/reset.
+
+Explanation of UI Controls
+
+Here’s a brief overview of key API endpoints:
+
+    Configuration Endpoint:
+        POST /api/config: Configure ticketing parameters.
+    System Control Endpoints:
+        POST /api/start: Start processing tickets.
+        POST /api/stop: Stop all operations.
+        POST /api/reset: Reset the ticketing system.
+    Status and Logging Endpoints:
+        GET /api/status: Retrieve current status of available tickets.
+        GET /api/logs: Retrieve log entries for monitoring application activity.
+        POST /api/clear-logs: Clear all existing log entries.
+
+Conclusion
+The Real-Time Event Ticketing Platform Backend is designed to efficiently manage ticket sales through concurrent processing while providing clear logging and configuration management. With this setup, you can easily integrate it with any frontend technology of your choice to create a complete ticketing solution. For any further questions or contributions, feel free to reach out or submit issues on the repository!
